@@ -1,3 +1,3 @@
 git add .
-git commit -m "extending httpServlets😎"
+git commit -m "Modification - extending servlet"
 git push -u origin servletApp

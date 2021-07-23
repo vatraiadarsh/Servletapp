@@ -5,7 +5,6 @@
  */
 package com.ada.web.controller;
 
-import javax.servlet.http.HttpServlet;
 
 /**
  *
@@ -13,6 +12,6 @@ import javax.servlet.http.HttpServlet;
  */
 
 
-public class DefaultController extends HttpServlet{
+public class DefaultController extends Controller{
     
 }

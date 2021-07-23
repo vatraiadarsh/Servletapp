@@ -5,10 +5,12 @@
  */
 package com.ada.web.controller;
 
+import javax.servlet.http.HttpServlet;
+
 /**
  *
  * @author vatra
  */
-public class UnitController extends Controller{
+public class Controller extends HttpServlet{
     
 }

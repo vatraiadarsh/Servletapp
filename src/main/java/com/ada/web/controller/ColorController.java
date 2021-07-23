@@ -5,12 +5,11 @@
  */
 package com.ada.web.controller;
 
-import javax.servlet.http.HttpServlet;
 
 /**
  *
  * @author vatra
  */
-public class ColorController extends HttpServlet{
+public class ColorController extends Controller{
     
 }
