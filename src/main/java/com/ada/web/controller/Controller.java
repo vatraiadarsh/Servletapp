@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
  *
  * @author vatra
  */
-public class Controller extends HttpServlet{
+//making abstract(virtual object) -> don't want to make any new Controller
+public abstract class Controller extends HttpServlet{
     
 }

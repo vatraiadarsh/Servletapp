@@ -1,3 +1,3 @@
 git add .
-git commit -m "Modification - extending servlet"
+git commit -m "Login -using servlet-mapping"
 git push -u origin servletApp
