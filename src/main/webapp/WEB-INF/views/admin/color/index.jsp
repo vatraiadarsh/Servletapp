@@ -5,13 +5,45 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Color</h1>
-    </body>
-</html>
+<%@include file="../shared/header.jsp" %>
+
+
+<h1>Color</h1>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    <c:forEach var="color" items="${requestScope.colors}">
+        <tr>
+            <td>${color.id}</td>
+            <td>${color.name}</td>
+            <td>${color.code}</td>
+            <td>
+                <!--in this expression lang no else only if so use choose-->
+                <c:choose>
+                    <c:when test="${color.status}">
+                        <span class="badge bg-success">Active</span>
+                    </c:when>
+                    <c:otherwise>
+                        <span class="badge bg-danger">Inactive</span>
+                    </c:otherwise>
+
+                </c:choose>
+            </td>
+            <td>
+
+                <a href="" class="btn btn-success position-relative">Edit</a>
+                <a href="" class="btn btn-danger position-relative">Delete</a>
+ 
+
+            </td>
+        </tr>
+    </c:forEach>
+</table>
+
+<%@include file="../shared/footer.jsp" %>

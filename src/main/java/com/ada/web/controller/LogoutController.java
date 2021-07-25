@@ -15,10 +15,16 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author vatra
  */
-@WebServlet(name = "unit",urlPatterns = {"/admin/units"})
-public class UnitController extends Controller{
-     @Override
+@WebServlet(name = "logout", urlPatterns = {"/admin/logout"})
+public class LogoutController extends Controller{
+
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-         view("admin/unit/index", req, resp);
+        req.getSession().invalidate();
+        resp.sendRedirect(req.getContextPath()+ "/login");
     }
+
+  
+    
+ 
 }

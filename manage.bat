@@ -1,3 +1,3 @@
 git add .
-git commit -m "Refactoring"
+git commit -m "DB connection"
 git push -u origin servletApp
