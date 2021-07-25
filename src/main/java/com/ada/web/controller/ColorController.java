@@ -20,6 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 public class ColorController extends Controller{
      @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/views/admin/color/index.jsp").forward(req, resp);
+         view("admin/color/index", req, resp);
     }
 }

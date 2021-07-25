@@ -1,3 +1,3 @@
 git add .
-git commit -m "using WebServlet"
+git commit -m "Refactoring"
 git push -u origin servletApp
