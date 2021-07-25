@@ -38,7 +38,7 @@
             <td>
 
                 <a href="" class="btn btn-success position-relative">Edit</a>
-                <a href="" class="btn btn-danger position-relative">Delete</a>
+                <a href="" class="btn btn-danger position-relative" onclick="return confirm('Are you sure to delete color ${color.name} ?')">Delete</a>
  
 
             </td>

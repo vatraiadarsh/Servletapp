@@ -1,3 +1,3 @@
 git add .
-git commit -m "DB connection"
+git commit -m "DAO IMPL"
 git push -u origin servletApp
