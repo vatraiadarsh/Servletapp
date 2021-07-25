@@ -5,11 +5,21 @@
  */
 package com.ada.web.controller;
 
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 
 /**
  *
  * @author vatra
  */
+@WebServlet(name = "color", urlPatterns = {"/admin/colors"})
 public class ColorController extends Controller{
-    
+     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/WEB-INF/views/admin/color/index.jsp").forward(req, resp);
+    }
 }
