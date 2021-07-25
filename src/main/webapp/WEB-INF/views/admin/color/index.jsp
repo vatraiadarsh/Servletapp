@@ -37,8 +37,8 @@
             </td>
             <td>
 
-                <a href="" class="btn btn-success position-relative">Edit</a>
-                <a href="" class="btn btn-danger position-relative" onclick="return confirm('Are you sure to delete color ${color.name} ?')">Delete</a>
+                <a href="${SITE_URL}/admin/colors?id=${color.id}&action=edit" class="btn btn-success position-relative">Edit</a>
+                <a href="${SITE_URL}/admin/colors?id=${color.id}&action=delete" class="btn btn-danger position-relative" onclick="return confirm('Are you sure to delete color ${color.name} ?')">Delete</a>
  
 
             </td>

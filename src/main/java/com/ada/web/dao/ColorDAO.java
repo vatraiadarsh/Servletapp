@@ -15,5 +15,6 @@ import java.util.List;
  */
 public interface ColorDAO {
     List<Color> getAll() throws ClassNotFoundException, SQLException;
+    int delete(int id) throws ClassNotFoundException, SQLException;
     
 }

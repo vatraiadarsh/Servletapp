@@ -40,5 +40,17 @@ public class ColorDAOImpl implements ColorDAO{
              conn.close();
              return colors;
     }
+
+    @Override
+    public int delete(int id) throws ClassNotFoundException, SQLException {
+     Class.forName("com.mysql.cj.jdbc.Driver");
+             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/inventoryapp","root","");
+             String sql = "delete from colors where id=?";
+             PreparedStatement stmt = conn.prepareStatement(sql); 
+             stmt.setInt(1, id);
+             int result = stmt.executeUpdate();
+             conn.close();
+             return result;
+    }
     
 }
